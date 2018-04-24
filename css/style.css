@@ -1,0 +1,59 @@
+/*Border-box reset*/
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    color:white;
+}
+
+/*Chat styling*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSettings{
+    margin-bottom: 20px;
+}
+
+.chat {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.chat #chatOutput {
+    overflow-y: scroll;
+    height: 280px;
+    width: 100%;
+    border: 1px solid #777;
+}
+
+.chat #chatOutput p{
+    margin:0;
+    padding:5px;
+    border-bottom: 1px solid #bbb;
+    word-break: break-all;
+}
+
+.chat #chatInput {
+    width: 75%;
+    color:black;
+}
+
+.chat #chatSend {
+    width: 25%;
+    color:black;
+}
+
+.main{
+    padding: 47px;
+}
